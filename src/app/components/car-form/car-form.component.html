@@ -1,0 +1,27 @@
+<form [formGroup]="carForm" (ngSubmit)="onSubmit()" class="car-form">
+    <div class="form-header">
+      <h2>{{ isEditMode ? 'Modifier' : 'Ajouter' }} la voiture</h2>
+    </div>
+  
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label>Marque</mat-label>
+      <input matInput formControlName="brand" required>
+    </mat-form-field>
+  
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label>Modèle</mat-label>
+      <input matInput formControlName="model" required>
+    </mat-form-field>
+  
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label>Couleur</mat-label>
+      <input matInput formControlName="color" required>
+    </mat-form-field>
+  
+    <div class="form-actions">
+      <button mat-raised-button color="primary" type="submit">
+        {{ isEditMode ? 'Modifier' : 'Ajouter' }} la voiture
+      </button>
+    </div>
+  </form>
+  

@@ -1,0 +1,26 @@
+.spacer {
+    flex: 1 1 auto; 
+  }
+  
+  mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  mat-toolbar button {
+    margin-left: 10px;
+  }
+  
+  mat-toolbar .mat-raised-button {
+    margin-left: 10px; 
+  }
+
+  .link {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: none; 
+  }
+  
+  
+  

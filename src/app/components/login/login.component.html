@@ -1,0 +1,28 @@
+<div class="login-container" *ngIf="loginFormGroup.enabled">
+    <mat-card class="login-card" [formGroup]="loginFormGroup">
+      <mat-card-header>
+        <mat-card-title class="card-title">Authentification</mat-card-title>
+      </mat-card-header>
+      <mat-divider class="divider-spacing"></mat-divider>
+      <mat-card-content>
+        <div class="form-fields">
+          <mat-form-field appearance="outline" class="input-field">
+            <mat-label>Nom d'utilisateur</mat-label>
+            <input matInput formControlName="username" placeholder="Entrer votre nom d'utilisateur">
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="input-field">
+            <mat-label>Mot de passe</mat-label>
+            <input type="password" matInput formControlName="password" placeholder="Entrer votre mot de passe">
+          </mat-form-field>
+        </div>
+      </mat-card-content>
+      <mat-card-actions align="end">
+        <div class="action-buttons">
+          <button mat-raised-button color="primary" (click)="login()">Se connecter</button>
+          <!-- <button mat-button color="accent" (click)="toggleRegister()">Créer un compte</button> -->
+        </div>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  
+  

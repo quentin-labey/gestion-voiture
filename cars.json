@@ -1,0 +1,16 @@
+{
+  "cars": [
+    {
+      "id": "1",
+      "brand": "Toyota",
+      "model": "Corolla",
+      "color": "Rouge"
+    },
+    {
+      "id": "c91b",
+      "brand": "dzdz",
+      "model": "dzdz",
+      "color": "dzadza"
+    }
+  ]
+}

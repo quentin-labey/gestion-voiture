@@ -1,0 +1,22 @@
+<mat-toolbar *ngIf="showNavbar" color="primary">
+    <span>
+        <a routerLink="/admin/home" class="link">Gestionnaire de voiture</a>
+      </span>
+      
+      
+    <button mat-button routerLink="/admin/cars">Liste des voitures</button>  
+    <button *ngIf="this.currentUser?.role?.includes('ADMIN')" mat-button routerLink="/admin/new-car">
+      Créer une voiture
+    </button>
+
+    <span class="spacer"></span>
+    <span *ngIf="currentUser">
+    {{ currentUser.username }}
+  </span>
+    <button mat-raised-button color="warn" (click)="logout()">Déconnexion</button>
+
+  </mat-toolbar>
+  
+  <router-outlet></router-outlet>
+  
+  
